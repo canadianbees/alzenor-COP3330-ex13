@@ -15,6 +15,7 @@ public class Interest
     private final int years;
     private final int freq;
 
+    //gets user input
     public Interest()
     {
         Scanner input = new Scanner(System.in);
@@ -32,6 +33,7 @@ public class Interest
         this.freq = input.nextInt();
     }
 
+    //calculates the compound interest and prints the result
     public void CmpInt()
     {
         float percent = (float) this.rate/100;
